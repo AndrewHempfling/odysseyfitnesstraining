@@ -1,0 +1,1490 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>fit</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<link href="https://fonts.googleapis.com/css?family=Oswald|Cinzel|Raleway|Roboto+Condensed&display=swap" rel="stylesheet">
+		<link rel="shortcut icon" type="image/x-icon" href="https://getbootstrap.com/docs/4.0/assets/img/favicons/favicon-32x32.png" alt="Favicon">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+		
+		<style>
+			/*
+			font-family: 'Raleway', sans-serif;
+			font-family: 'Roboto Condensed', sans-serif;
+			font-family: 'Oswald', sans-serif;
+			font-family: 'Zinzel', serif;
+			*/
+			body {
+				font-family: 'Roboto Condensed', sans-serif;
+			}
+			
+			
+		</style>
+	</head>
+	<body>
+	<div class="container">
+<table class="table-sm">
+	<thead>
+		<tr>
+			<th>Property</th>
+			<th>Expected Type</th>
+			<th>Description</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<th>Properties from <a href="#">LocalBusiness</a></th>
+		</tr>
+	</tbody>
+	<tbody class="supertype">
+		<tr>
+			<th>
+				<code property="rdfs:label"><a href="#">currenciesAccepted</a></code>
+			</th>
+			<td class="prop-ect">
+				<link property="rangeIncludes" href="http://schema.org/Text">
+				<a href="#">Text</a>&nbsp;
+				<link property="domainIncludes" href="http://schema.org/LocalBusiness">
+			</td>
+			<td class="prop-desc" property="rdfs:comment">The currency accepted.<br><br>
+				Use standard formats: <a href="#">ISO 4217 currency format</a> e.g. "USD"; <a href="#">Ticker symbol</a> for cryptocurrencies e.g. "BTC"; well known names for <a href="#">Local Exchange Tradings Systems</a> (LETS) and other currency types e.g. "Ithaca HOUR".
+			</td>
+		</tr>
+		<tr>
+			<th>
+				<code property="rdfs:label"><a href="#">openingHours</a></code>
+			</th>
+			<td class="prop-ect">
+				<link property="rangeIncludes" href="http://schema.org/Text">
+				<a href="#">Text</a>&nbsp;
+				<link property="domainIncludes" href="http://schema.org/CivicStructure">
+				<link property="domainIncludes" href="http://schema.org/LocalBusiness">
+			</td>
+			<td class="prop-desc" property="rdfs:comment">
+				The general opening hours for a business. Opening hours can be specified as a weekly time range, starting with days, then times per day. Multiple days can be listed with commas ',' separating each day. Day or time ranges are specified using a hyphen '-'.<br><br>
+				<ul>
+					<li>Days are specified using the following two-letter combinations: <code>Mo</code>, <code>Tu</code>, <code>We</code>, <code>Th</code>, <code>Fr</code>, <code>Sa</code>, <code>Su</code>.</li>
+					<li>Times are specified using 24:00 time. For example, 3pm is specified as <code>15:00</code>. </li>
+					<li>Here is an example: <code>&lt;time itemprop="openingHours" datetime="Tu,Th 16:00-20:00"&gt;Tuesdays and Thursdays 4-8pm&lt;/time&gt;</code>.</li>
+					<li>If a business is open 7 days a week, then it can be specified as <code>&lt;time itemprop="openingHours" datetime="Mo-Su"&gt;Monday through Sunday, all day&lt;/time&gt;</code>.</li>
+				</ul>
+			</td>
+		</tr>
+		<tr>
+			<th>
+				<code property="rdfs:label"><a href="#">paymentAccepted</a></code>
+			</th>
+			<td class="prop-ect">
+				<link property="rangeIncludes" href="http://schema.org/Text">
+				<a href="#">Text</a>&nbsp;
+				<link property="domainIncludes" href="http://schema.org/LocalBusiness">
+			</td>
+			<td class="prop-desc" property="rdfs:comment">Cash, Credit Card, Cryptocurrency, Local Exchange Tradings System, etc.</td>
+		</tr>
+		<tr>
+			<th>
+				<code property="rdfs:label"><a href="#">priceRange</a></code>
+			</th>
+			<td class="prop-ect">
+				<link property="rangeIncludes" href="http://schema.org/Text">
+				<a href="#">Text</a>&nbsp;
+				<link property="domainIncludes" href="http://schema.org/LocalBusiness">
+			</td>
+			<td class="prop-desc" property="rdfs:comment">The price range of the business, for example <code>$$$</code>.</td>
+		</tr>
+		<tr>
+			<th>Properties from <a href="#">Organization</a></th>
+		</tr>
+	</tbody>
+	<tbody class="supertype">
+		<tr>
+			<th>
+				<code property="rdfs:label"><a title="Defined in extension: pending.schema.org" class="ext ext-pending" href="https://pending.schema.org/actionableFeedbackPolicy">actionableFeedbackPolicy</a></code>
+			</th>
+			<td class="prop-ect">
+				<link property="rangeIncludes" href="http://schema.org/CreativeWork">
+				<a href="#">CreativeWork</a>&nbsp; or <br> 
+				<link property="rangeIncludes" href="http://schema.org/URL">
+				<a href="#">URL</a>&nbsp;
+				<link property="domainIncludes" href="http://schema.org/NewsMediaOrganization">
+				<link property="domainIncludes" href="http://schema.org/Organization">
+			</td>
+			<td class="prop-desc" property="rdfs:comment">For a <a class="localLink" href="/NewsMediaOrganization">NewsMediaOrganization</a> or other news-related <a class="localLink" href="/Organization">Organization</a>, a statement about public engagement activities (for news media, the newsroom’s), including involving the public - digitally or otherwise -- in coverage decisions, reporting and activities after publication.</td>
+		</tr>
+		<tr>
+			<th>
+				<code property="rdfs:label"><a href="#">address</a></code>
+			</th>
+			<td class="prop-ect">
+				<link property="rangeIncludes" href="http://schema.org/PostalAddress">
+				<a href="#">PostalAddress</a>&nbsp; or <br> 
+				<link property="rangeIncludes" href="http://schema.org/Text">
+				<a href="#">Text</a>&nbsp;
+				<link property="domainIncludes" href="http://schema.org/GeoCoordinates">
+				<link property="domainIncludes" href="http://schema.org/GeoShape">
+				<link property="domainIncludes" href="http://schema.org/Organization">
+				<link property="domainIncludes" href="http://schema.org/Person">
+				<link property="domainIncludes" href="http://schema.org/Place">
+			</td>
+			<td class="prop-desc" property="rdfs:comment">Physical address of the item.</td>
+		</tr>
+		<tr>
+			<th>
+				<code property="rdfs:label"><a href="#">aggregateRating</a></code>
+			</th>
+			<td class="prop-ect">
+				<link property="rangeIncludes" href="http://schema.org/AggregateRating">
+				<a href="#">AggregateRating</a>&nbsp;
+				<link property="domainIncludes" href="http://schema.org/Brand">
+				<link property="domainIncludes" href="http://schema.org/CreativeWork">
+				<link property="domainIncludes" href="http://schema.org/Event">
+				<link property="domainIncludes" href="http://schema.org/Offer">
+				<link property="domainIncludes" href="http://schema.org/Organization">
+				<link property="domainIncludes" href="http://schema.org/Place">
+				<link property="domainIncludes" href="http://schema.org/Product">
+				<link property="domainIncludes" href="http://schema.org/Service">
+			</td>
+			<td class="prop-desc" property="rdfs:comment">The overall rating, based on a collection of reviews or ratings, of the item.</td>
+		</tr>
+		<tr>
+			<th>
+				<code property="rdfs:label"><a href="#">alumni</a></code>
+			</th>
+			<td class="prop-ect">
+				<link property="rangeIncludes" href="http://schema.org/Person">
+				<a href="#">Person</a>&nbsp;
+				<link property="domainIncludes" href="http://schema.org/EducationalOrganization">
+				<link property="domainIncludes" href="http://schema.org/Organization">
+			</td>
+			<td class="prop-desc" property="rdfs:comment">Alumni of an organization.<br> Inverse property: <a href="#">alumniOf</a>.</td>
+		</tr>
+		<tr>
+			<th>
+				<code property="rdfs:label"><a href="#">areaServed</a></code>
+			</th>
+			<td class="prop-ect">
+				<link property="rangeIncludes" href="http://schema.org/AdministrativeArea">
+				<a href="#">AdministrativeArea</a>&nbsp; or <br> 
+				<link property="rangeIncludes" href="http://schema.org/GeoShape">
+				<a href="#">GeoShape</a>&nbsp; or <br> 
+				<link property="rangeIncludes" href="http://schema.org/Place">
+				<a href="#">Place</a>&nbsp; or <br> 
+				<link property="rangeIncludes" href="http://schema.org/Text">
+				<a href="#">Text</a>&nbsp;
+				<link property="domainIncludes" href="http://schema.org/ContactPoint">
+				<link property="domainIncludes" href="http://schema.org/DeliveryChargeSpecification">
+				<link property="domainIncludes" href="http://schema.org/Demand">
+				<link property="domainIncludes" href="http://schema.org/Offer">
+				<link property="domainIncludes" href="http://schema.org/Organization">
+				<link property="domainIncludes" href="http://schema.org/Service">
+			</td>
+			<td class="prop-desc" property="rdfs:comment">The geographic area where a service or offered item is provided. Supersedes <a href="#">serviceArea</a>.</td>
+		</tr>
+		<tr>
+			<th>
+				<code property="rdfs:label"><a href="#">award</a></code>
+			</th>
+			<td class="prop-ect">
+				<link property="rangeIncludes" href="http://schema.org/Text">
+				<a href="#">Text</a>&nbsp;
+				<link property="domainIncludes" href="http://schema.org/CreativeWork">
+				<link property="domainIncludes" href="http://schema.org/Organization">
+				<link property="domainIncludes" href="http://schema.org/Person">
+				<link property="domainIncludes" href="http://schema.org/Product">
+				<link property="domainIncludes" href="http://schema.org/Service">
+			</td>
+			<td class="prop-desc" property="rdfs:comment">An award won by or for this item. Supersedes <a href="#">awards</a>.</td>
+		</tr>
+		<tr>
+			<th>
+				<code property="rdfs:label"><a href="#">brand</a></code>
+			</th>
+			<td class="prop-ect">
+				<link property="rangeIncludes" href="http://schema.org/Brand">
+				<a href="#">Brand</a>&nbsp; or <br> 
+				<link property="rangeIncludes" href="http://schema.org/Organization">
+				<a href="#">Organization</a>&nbsp;
+				<link property="domainIncludes" href="http://schema.org/Organization">
+				<link property="domainIncludes" href="http://schema.org/Person">
+				<link property="domainIncludes" href="http://schema.org/Product">
+				<link property="domainIncludes" href="http://schema.org/Service">
+			</td>
+			<td class="prop-desc" property="rdfs:comment">The brand(s) associated with a product or service, or the brand(s) maintained by an organization or business person.</td>
+		</tr>
+		<tr>
+			<th>
+				<code property="rdfs:label"><a href="#">contactPoint</a></code>
+			</th>
+			<td class="prop-ect">
+				<link property="rangeIncludes" href="http://schema.org/ContactPoint">
+				<a href="#">ContactPoint</a>&nbsp;
+				<link property="domainIncludes" href="http://schema.org/HealthInsurancePlan">
+				<link property="domainIncludes" href="http://schema.org/Organization">
+				<link property="domainIncludes" href="http://schema.org/Person">
+			</td>
+			<td class="prop-desc" property="rdfs:comment">A contact point for a person or organization. Supersedes <a href="#">contactPoints</a>.</td>
+		</tr>
+		<tr>
+			<th>
+				<code property="rdfs:label"><a title="Defined in extension: pending.schema.org" class="ext ext-pending" href="https://pending.schema.org/correctionsPolicy">correctionsPolicy</a></code>
+			</th>
+			<td class="prop-ect">
+				<link property="rangeIncludes" href="http://schema.org/CreativeWork">
+				<a href="#">CreativeWork</a>&nbsp; or <br> 
+				<link property="rangeIncludes" href="http://schema.org/URL">
+				<a href="#">URL</a>&nbsp;
+				<link property="domainIncludes" href="http://schema.org/NewsMediaOrganization">
+				<link property="domainIncludes" href="http://schema.org/Organization">
+			</td>
+			<td class="prop-desc" property="rdfs:comment">For an <a class="localLink" href="/Organization">Organization</a> (e.g. <a class="localLink" href="/NewsMediaOrganization">NewsMediaOrganization</a>), a statement describing (in news media, the newsroom’s) disclosure and correction policy for errors.</td>
+		</tr>
+		<tr>
+			<th>
+				<code property="rdfs:label"><a href="#">department</a></code>
+			</th>
+			<td class="prop-ect">
+				<link property="rangeIncludes" href="http://schema.org/Organization">
+				<a href="#">Organization</a>&nbsp;
+				<link property="domainIncludes" href="http://schema.org/Organization">
+			</td>
+			<td class="prop-desc" property="rdfs:comment">A relationship between an organization and a department of that organization, also described as an organization (allowing different urls, logos, opening hours). For example: a store with a pharmacy, or a bakery with a cafe.</td>
+		</tr>
+		<tr>
+			<th>
+				<code property="rdfs:label"><a href="#">dissolutionDate</a></code>
+			</th>
+			<td class="prop-ect">
+				<link property="rangeIncludes" href="http://schema.org/Date">
+				<a href="#">Date</a>&nbsp;
+				<link property="domainIncludes" href="http://schema.org/Organization">
+			</td>
+			<td class="prop-desc" property="rdfs:comment">The date that this organization was dissolved.</td>
+		</tr>
+		<tr>
+			<th>
+				<code property="rdfs:label"><a title="Defined in extension: pending.schema.org" class="ext ext-pending" href="https://pending.schema.org/diversityPolicy">diversityPolicy</a></code>
+			</th>
+			<td class="prop-ect">
+				<link property="rangeIncludes" href="http://schema.org/CreativeWork">
+				<a href="#">CreativeWork</a>&nbsp; or <br> 
+				<link property="rangeIncludes" href="http://schema.org/URL">
+				<a href="#">URL</a>&nbsp;
+				<link property="domainIncludes" href="http://schema.org/NewsMediaOrganization">
+				<link property="domainIncludes" href="http://schema.org/Organization">
+			</td>
+			<td class="prop-desc" property="rdfs:comment">Statement on diversity policy by an <a class="localLink" href="/Organization">Organization</a> e.g. a <a class="localLink" href="/NewsMediaOrganization">NewsMediaOrganization</a>. For a <a class="localLink" href="/NewsMediaOrganization">NewsMediaOrganization</a>, a statement describing the newsroom’s diversity policy on both staffing and sources, typically providing staffing data.</td>
+		</tr>
+		<tr>
+			<th>
+				<code property="rdfs:label"><a title="Defined in extension: pending.schema.org" class="ext ext-pending" href="https://pending.schema.org/diversityStaffingReport">diversityStaffingReport</a></code>
+			</th>
+			<td class="prop-ect">
+				<link property="rangeIncludes" href="http://schema.org/Article">
+				<a href="#">Article</a>&nbsp; or <br> 
+				<link property="rangeIncludes" href="http://schema.org/URL">
+				<a href="#">URL</a>&nbsp;
+				<link property="domainIncludes" href="http://schema.org/NewsMediaOrganization">
+				<link property="domainIncludes" href="http://schema.org/Organization">
+			</td>
+			<td class="prop-desc" property="rdfs:comment">For an <a class="localLink" href="/Organization">Organization</a> (often but not necessarily a <a class="localLink" href="/NewsMediaOrganization">NewsMediaOrganization</a>), a report on staffing diversity issues. In a news context this might be for example ASNE or RTDNA (US) reports, or self-reported.</td>
+		</tr>
+		<tr>
+			<th>
+				<code property="rdfs:label"><a href="#">duns</a></code>
+			</th>
+			<td class="prop-ect">
+				<link property="rangeIncludes" href="http://schema.org/Text">
+				<a href="#">Text</a>&nbsp;
+				<link property="domainIncludes" href="http://schema.org/Organization">
+				<link property="domainIncludes" href="http://schema.org/Person">
+			</td>
+			<td class="prop-desc" property="rdfs:comment">The Dun &amp; Bradstreet DUNS number for identifying an organization or business person.</td>
+		</tr>
+		<tr>
+			<th>
+				<code property="rdfs:label"><a href="#">email</a></code>
+			</th>
+			<td class="prop-ect">
+				<link property="rangeIncludes" href="http://schema.org/Text">
+				<a href="#">Text</a>&nbsp;
+				<link property="domainIncludes" href="http://schema.org/ContactPoint">
+				<link property="domainIncludes" href="http://schema.org/Organization">
+				<link property="domainIncludes" href="http://schema.org/Person">
+			</td>
+			<td class="prop-desc" property="rdfs:comment">Email address.</td>
+		</tr>
+		<tr>
+			<th>
+				<code property="rdfs:label"><a href="#">employee</a></code>
+			</th>
+			<td class="prop-ect">
+				<link property="rangeIncludes" href="http://schema.org/Person">
+				<a href="#">Person</a>&nbsp;
+				<link property="domainIncludes" href="http://schema.org/Organization">
+			</td>
+			<td class="prop-desc" property="rdfs:comment">Someone working for this organization. Supersedes <a href="#">employees</a>.</td>
+		</tr>
+		<tr>
+			<th>
+				<code property="rdfs:label"><a title="Defined in extension: pending.schema.org" class="ext ext-pending" href="https://pending.schema.org/ethicsPolicy">ethicsPolicy</a></code>
+			</th>
+			<td class="prop-ect">
+				<link property="rangeIncludes" href="http://schema.org/CreativeWork">
+				<a href="#">CreativeWork</a>&nbsp; or <br> 
+				<link property="rangeIncludes" href="http://schema.org/URL">
+				<a href="#">URL</a>&nbsp;
+				<link property="domainIncludes" href="http://schema.org/NewsMediaOrganization">
+				<link property="domainIncludes" href="http://schema.org/Organization">
+			</td>
+			<td class="prop-desc" property="rdfs:comment">Statement about ethics policy, e.g. of a <a class="localLink" href="/NewsMediaOrganization">NewsMediaOrganization</a> regarding journalistic and publishing practices, or of a <a class="localLink" href="/Restaurant">Restaurant</a>, a page describing food source policies. In the case of a <a class="localLink" href="/NewsMediaOrganization">NewsMediaOrganization</a>, an ethicsPolicy is typically a statement describing the personal, organizational, and corporate standards of behavior expected by the organization.</td>
+		</tr>
+		<tr>
+			<th>
+				<code property="rdfs:label"><a href="#">event</a></code>
+			</th>
+			<td class="prop-ect">
+				<link property="rangeIncludes" href="http://schema.org/Event">
+				<a href="#">Event</a>&nbsp;
+				<link property="domainIncludes" href="http://schema.org/InformAction">
+				<link property="domainIncludes" href="http://schema.org/InviteAction">
+				<link property="domainIncludes" href="http://schema.org/JoinAction">
+				<link property="domainIncludes" href="http://schema.org/LeaveAction">
+				<link property="domainIncludes" href="http://schema.org/Organization">
+				<link property="domainIncludes" href="http://schema.org/Place">
+				<link property="domainIncludes" href="http://schema.org/PlayAction">
+			</td>
+			<td class="prop-desc" property="rdfs:comment">Upcoming or past event associated with this place, organization, or action. Supersedes <a href="#">events</a>.</td>
+		</tr>
+		<tr>
+			<th>
+				<code property="rdfs:label"><a href="#">faxNumber</a></code>
+			</th>
+			<td class="prop-ect">
+				<link property="rangeIncludes" href="http://schema.org/Text">
+				<a href="#">Text</a>&nbsp;
+				<link property="domainIncludes" href="http://schema.org/ContactPoint">
+				<link property="domainIncludes" href="http://schema.org/Organization">
+				<link property="domainIncludes" href="http://schema.org/Person">
+				<link property="domainIncludes" href="http://schema.org/Place">
+			</td>
+			<td class="prop-desc" property="rdfs:comment">The fax number.</td>
+		</tr>
+		<tr>
+			<th>
+				<code property="rdfs:label"><a href="#">founder</a></code>
+			</th>
+			<td class="prop-ect">
+				<link property="rangeIncludes" href="http://schema.org/Person">
+				<a href="#">Person</a>&nbsp;
+				<link property="domainIncludes" href="http://schema.org/Organization">
+			</td>
+			<td class="prop-desc" property="rdfs:comment">A person who founded this organization. Supersedes <a href="#">founders</a>.</td>
+		</tr>
+		<tr>
+			<th>
+				<code property="rdfs:label"><a href="#">foundingDate</a></code>
+			</th>
+			<td class="prop-ect">
+				<link property="rangeIncludes" href="http://schema.org/Date">
+				<a href="#">Date</a>&nbsp;
+				<link property="domainIncludes" href="http://schema.org/Organization">
+			</td>
+			<td class="prop-desc" property="rdfs:comment">The date that this organization was founded.</td>
+		</tr>
+		<tr>
+			<th>
+				<code property="rdfs:label"><a href="#">foundingLocation</a></code>
+			</th>
+			<td class="prop-ect">
+				<link property="rangeIncludes" href="http://schema.org/Place">
+				<a href="#">Place</a>&nbsp;
+				<link property="domainIncludes" href="http://schema.org/Organization">
+			</td>
+			<td class="prop-desc" property="rdfs:comment">The place where the Organization was founded.</td>
+		</tr>
+		<tr>
+			<th>
+				<code property="rdfs:label"><a href="#">funder</a></code>
+			</th>
+			<td class="prop-ect">
+				<link property="rangeIncludes" href="http://schema.org/Organization">
+				<a href="#">Organization</a>&nbsp; or <br> 
+				<link property="rangeIncludes" href="http://schema.org/Person">
+				<a href="#">Person</a>&nbsp;
+				<link property="domainIncludes" href="http://schema.org/CreativeWork">
+				<link property="domainIncludes" href="http://schema.org/Event">
+				<link property="domainIncludes" href="http://schema.org/MonetaryGrant">
+				<link property="domainIncludes" href="http://schema.org/Organization">
+				<link property="domainIncludes" href="http://schema.org/Person">
+			</td>
+			<td class="prop-desc" property="rdfs:comment">A person or organization that supports (sponsors) something through some kind of financial contribution.</td>
+		</tr>
+		<tr>
+			<th>
+				<code property="rdfs:label"><a href="#">globalLocationNumber</a></code>
+			</th>
+			<td class="prop-ect">
+				<link property="rangeIncludes" href="http://schema.org/Text">
+				<a href="#">Text</a>&nbsp;
+				<link property="domainIncludes" href="http://schema.org/Organization">
+				<link property="domainIncludes" href="http://schema.org/Person">
+				<link property="domainIncludes" href="http://schema.org/Place">
+			</td>
+			<td class="prop-desc" property="rdfs:comment">The <a href="#">Global Location Number</a> (GLN, sometimes also referred to as International Location Number or ILN) of the respective organization, person, or place. The GLN is a 13-digit number used to identify parties and physical locations.</td>
+		</tr>
+		<tr>
+			<th>
+				<code property="rdfs:label"><a title="Defined in extension: pending.schema.org" class="ext ext-pending" href="https://pending.schema.org/hasCredential">hasCredential</a></code>
+			</th>
+			<td class="prop-ect">
+				<link property="rangeIncludes" href="http://schema.org/EducationalOccupationalCredential">
+				<a title="Defined in extension: pending.schema.org" class="ext ext-pending" href="https://pending.schema.org/EducationalOccupationalCredential">EducationalOccupationalCredential</a>&nbsp;
+				<link property="domainIncludes" href="http://schema.org/Organization">
+				<link property="domainIncludes" href="http://schema.org/Person">
+			</td>
+			<td class="prop-desc" property="rdfs:comment">A credential awarded to the Person or Organization.</td>
+		</tr>
+		<tr>
+			<th>
+				<code property="rdfs:label"><a href="#">hasOfferCatalog</a></code>
+			</th>
+			<td class="prop-ect">
+				<link property="rangeIncludes" href="http://schema.org/OfferCatalog">
+				<a href="#">OfferCatalog</a>&nbsp;
+				<link property="domainIncludes" href="http://schema.org/Organization">
+				<link property="domainIncludes" href="http://schema.org/Person">
+				<link property="domainIncludes" href="http://schema.org/Service">
+			</td>
+			<td class="prop-desc" property="rdfs:comment">Indicates an OfferCatalog listing for this Organization, Person, or Service.</td>
+		</tr>
+		<tr>
+			<th>
+				<code property="rdfs:label"><a href="#">hasPOS</a></code>
+			</th>
+			<td class="prop-ect">
+				<link property="rangeIncludes" href="http://schema.org/Place">
+				<a href="#">Place</a>&nbsp;
+				<link property="domainIncludes" href="http://schema.org/Organization">
+				<link property="domainIncludes" href="http://schema.org/Person">
+			</td>
+			<td class="prop-desc" property="rdfs:comment">Points-of-Sales operated by the organization or person.</td>
+		</tr>
+		<tr>
+			<th>
+				<code property="rdfs:label"><a title="Defined in extension: pending.schema.org" class="ext ext-pending" href="https://pending.schema.org/hasProductReturnPolicy">hasProductReturnPolicy</a></code>
+			</th>
+			<td class="prop-ect">
+				<link property="rangeIncludes" href="http://schema.org/ProductReturnPolicy">
+				<a title="Defined in extension: pending.schema.org" class="ext ext-pending" href="https://pending.schema.org/ProductReturnPolicy">ProductReturnPolicy</a>&nbsp;
+				<link property="domainIncludes" href="http://schema.org/Organization">
+				<link property="domainIncludes" href="http://schema.org/Product">
+			</td>
+			<td class="prop-desc" property="rdfs:comment">Indicates a ProductReturnPolicy that may be applicable.</td>
+		</tr>
+		<tr>
+			<th>
+				<code property="rdfs:label"><a href="#">isicV4</a></code>
+			</th>
+			<td class="prop-ect">
+				<link property="rangeIncludes" href="http://schema.org/Text">
+				<a href="#">Text</a>&nbsp;
+				<link property="domainIncludes" href="http://schema.org/Organization">
+				<link property="domainIncludes" href="http://schema.org/Person">
+				<link property="domainIncludes" href="http://schema.org/Place">
+			</td>
+			<td class="prop-desc" property="rdfs:comment">The International Standard of Industrial Classification of All Economic Activities (ISIC), Revision 4 code for a particular organization, business person, or place.</td>
+		</tr>
+		<tr>
+			<th>
+				<code property="rdfs:label"><a title="Defined in extension: pending.schema.org" class="ext ext-pending" href="https://pending.schema.org/knowsAbout">knowsAbout</a></code>
+			</th>
+			<td class="prop-ect">
+				<link property="rangeIncludes" href="http://schema.org/Text">
+				<a href="#">Text</a>&nbsp; or <br> 
+				<link property="rangeIncludes" href="http://schema.org/Thing">
+				<a href="#">Thing</a>&nbsp; or <br> 
+				<link property="rangeIncludes" href="http://schema.org/URL">
+				<a href="#">URL</a>&nbsp;
+				<link property="domainIncludes" href="http://schema.org/Organization">
+				<link property="domainIncludes" href="http://schema.org/Person">
+			</td>
+			<td class="prop-desc" property="rdfs:comment">Of a <a class="localLink" href="/Person">Person</a>, and less typically of an <a class="localLink" href="/Organization">Organization</a>, to indicate a topic that is known about - suggesting possible expertise but not implying it. We do not distinguish skill levels here, or relate this to educational content, events, objectives or <a class="localLink" href="/JobPosting">JobPosting</a> descriptions.</td>
+		</tr>
+		<tr>
+			<th>
+				<code property="rdfs:label"><a title="Defined in extension: pending.schema.org" class="ext ext-pending" href="https://pending.schema.org/knowsLanguage">knowsLanguage</a></code>
+			</th>
+			<td class="prop-ect">
+				<link property="rangeIncludes" href="http://schema.org/Language">
+				<a href="#">Language</a>&nbsp; or <br> 
+				<link property="rangeIncludes" href="http://schema.org/Text">
+				<a href="#">Text</a>&nbsp;
+				<link property="domainIncludes" href="http://schema.org/Organization">
+				<link property="domainIncludes" href="http://schema.org/Person">
+			</td>
+			<td class="prop-desc" property="rdfs:comment">Of a <a class="localLink" href="/Person">Person</a>, and less typically of an <a class="localLink" href="/Organization">Organization</a>, to indicate a known language. We do not distinguish skill levels or reading/writing/speaking/signing here. Use language codes from the <a href="#">IETF BCP 47 standard</a>.</td>
+		</tr>
+		<tr>
+			<th>
+				<code property="rdfs:label"><a href="#">legalName</a></code>
+			</th>
+			<td class="prop-ect">
+				<link property="rangeIncludes" href="http://schema.org/Text">
+				<a href="#">Text</a>&nbsp;
+				<link property="domainIncludes" href="http://schema.org/Organization">
+			</td>
+			<td class="prop-desc" property="rdfs:comment">The official name of the organization, e.g. the registered company name.</td>
+		</tr>
+		<tr>
+			<th>
+				<code property="rdfs:label"><a href="#">leiCode</a></code>
+			</th>
+			<td class="prop-ect">
+				<link property="rangeIncludes" href="http://schema.org/Text">
+				<a href="#">Text</a>&nbsp;
+				<link property="domainIncludes" href="http://schema.org/Organization">
+			</td>
+			<td class="prop-desc" property="rdfs:comment">An organization identifier that uniquely identifies a legal entity as defined in ISO 17442.</td>
+		</tr>
+		<tr>
+			<th>
+				<code property="rdfs:label"><a href="#">location</a></code>
+			</th>
+			<td class="prop-ect">
+				<link property="rangeIncludes" href="http://schema.org/Place">
+				<a href="#">Place</a>&nbsp; or <br> 
+				<link property="rangeIncludes" href="http://schema.org/PostalAddress">
+				<a href="#">PostalAddress</a>&nbsp; or <br> 
+				<link property="rangeIncludes" href="http://schema.org/Text">
+				<a href="#">Text</a>&nbsp;
+				<link property="domainIncludes" href="http://schema.org/Action">
+				<link property="domainIncludes" href="http://schema.org/Event">
+				<link property="domainIncludes" href="http://schema.org/Organization">
+			</td>
+			<td class="prop-desc" property="rdfs:comment">The location of for example where the event is happening, an organization is located, or where an action takes place.</td>
+		</tr>
+		<tr>
+			<th>
+				<code property="rdfs:label"><a href="#">logo</a></code>
+			</th>
+			<td class="prop-ect">
+				<link property="rangeIncludes" href="http://schema.org/ImageObject">
+				<a href="#">ImageObject</a>&nbsp; or <br> 
+				<link property="rangeIncludes" href="http://schema.org/URL">
+				<a href="#">URL</a>&nbsp;
+				<link property="domainIncludes" href="http://schema.org/Brand">
+				<link property="domainIncludes" href="http://schema.org/Organization">
+				<link property="domainIncludes" href="http://schema.org/Place">
+				<link property="domainIncludes" href="http://schema.org/Product">
+				<link property="domainIncludes" href="http://schema.org/Service">
+			</td>
+			<td class="prop-desc" property="rdfs:comment">An associated logo.</td>
+		</tr>
+		<tr>
+			<th>
+				<code property="rdfs:label"><a href="#">makesOffer</a></code>
+			</th>
+			<td class="prop-ect">
+				<link property="rangeIncludes" href="http://schema.org/Offer">
+				<a href="#">Offer</a>&nbsp;
+				<link property="domainIncludes" href="http://schema.org/Organization">
+				<link property="domainIncludes" href="http://schema.org/Person">
+			</td>
+			<td class="prop-desc" property="rdfs:comment">A pointer to products or services offered by the organization or person.<br> Inverse property: <a href="#">offeredBy</a>.</td>
+		</tr>
+		<tr>
+			<th>
+				<code property="rdfs:label"><a href="#">member</a></code>
+			</th>
+			<td class="prop-ect">
+				<link property="rangeIncludes" href="http://schema.org/Organization">
+				<a href="#">Organization</a>&nbsp; or <br> 
+				<link property="rangeIncludes" href="http://schema.org/Person">
+				<a href="#">Person</a>&nbsp;
+				<link property="domainIncludes" href="http://schema.org/Organization">
+				<link property="domainIncludes" href="http://schema.org/ProgramMembership">
+			</td>
+			<td class="prop-desc" property="rdfs:comment">A member of an Organization or a ProgramMembership. Organizations can be members of organizations; ProgramMembership is typically for individuals. Supersedes <a href="#">members</a>, <a href="#">musicGroupMember</a>.<br> Inverse property: <a href="#">memberOf</a>.</td>
+		</tr>
+		<tr>
+			<th>
+				<code property="rdfs:label"><a href="#">memberOf</a></code>
+			</th>
+			<td class="prop-ect">
+				<link property="rangeIncludes" href="http://schema.org/Organization">
+				<a href="#">Organization</a>&nbsp; or <br> 
+				<link property="rangeIncludes" href="http://schema.org/ProgramMembership">
+				<a href="#">ProgramMembership</a>&nbsp;
+				<link property="domainIncludes" href="http://schema.org/Organization">
+				<link property="domainIncludes" href="http://schema.org/Person">
+			</td>
+			<td class="prop-desc" property="rdfs:comment">An Organization (or ProgramMembership) to which this Person or Organization belongs.<br> Inverse property: <a href="#">member</a>.</td>
+		</tr>
+		<tr>
+			<th>
+				<code property="rdfs:label"><a href="#">naics</a></code>
+			</th>
+			<td class="prop-ect">
+				<link property="rangeIncludes" href="http://schema.org/Text">
+				<a href="#">Text</a>&nbsp;
+				<link property="domainIncludes" href="http://schema.org/Organization">
+				<link property="domainIncludes" href="http://schema.org/Person">
+			</td>
+			<td class="prop-desc" property="rdfs:comment">The North American Industry Classification System (NAICS) code for a particular organization or business person.</td>
+		</tr>
+		<tr>
+			<th>
+				<code property="rdfs:label"><a href="#">numberOfEmployees</a></code>
+			</th>
+			<td class="prop-ect">
+				<link property="rangeIncludes" href="http://schema.org/QuantitativeValue">
+				<a href="#">QuantitativeValue</a>&nbsp;
+				<link property="domainIncludes" href="http://schema.org/BusinessAudience">
+				<link property="domainIncludes" href="http://schema.org/Organization">
+			</td>
+			<td class="prop-desc" property="rdfs:comment">The number of employees in an organization e.g. business.</td>
+		</tr>
+		<tr>
+			<th>
+				<code property="rdfs:label"><a title="Defined in extension: pending.schema.org" class="ext ext-pending" href="https://pending.schema.org/ownershipFundingInfo">ownershipFundingInfo</a></code>
+			</th>
+			<td class="prop-ect">
+				<link property="rangeIncludes" href="http://schema.org/AboutPage">
+				<a href="#">AboutPage</a>&nbsp; or <br> 
+				<link property="rangeIncludes" href="http://schema.org/CreativeWork">
+				<a href="#">CreativeWork</a>&nbsp; or <br> 
+				<link property="rangeIncludes" href="http://schema.org/Text">
+				<a href="#">Text</a>&nbsp; or <br> 
+				<link property="rangeIncludes" href="http://schema.org/URL">
+				<a href="#">URL</a>&nbsp;
+				<link property="domainIncludes" href="http://schema.org/NewsMediaOrganization">
+				<link property="domainIncludes" href="http://schema.org/Organization">
+			</td>
+			<td class="prop-desc" property="rdfs:comment">For an <a class="localLink" href="/Organization">Organization</a> (often but not necessarily a <a class="localLink" href="/NewsMediaOrganization">NewsMediaOrganization</a>), a description of organizational ownership structure; funding and grants. In a news/media setting, this is with particular reference to editorial independence.   Note that the <a class="localLink" href="/funder">funder</a> is also available and can be used to make basic funder information machine-readable.</td>
+		</tr>
+		<tr>
+			<th>
+				<code property="rdfs:label"><a href="#">owns</a></code>
+			</th>
+			<td class="prop-ect">
+				<link property="rangeIncludes" href="http://schema.org/OwnershipInfo">
+				<a href="#">OwnershipInfo</a>&nbsp; or <br> 
+				<link property="rangeIncludes" href="http://schema.org/Product">
+				<a href="#">Product</a>&nbsp;
+				<link property="domainIncludes" href="http://schema.org/Organization">
+				<link property="domainIncludes" href="http://schema.org/Person">
+			</td>
+			<td class="prop-desc" property="rdfs:comment">Products owned by the organization or person.</td>
+		</tr>
+		<tr>
+			<th>
+				<code property="rdfs:label"><a href="#">parentOrganization</a></code>
+			</th>
+			<td class="prop-ect">
+				<link property="rangeIncludes" href="http://schema.org/Organization">
+				<a href="#">Organization</a>&nbsp;
+				<link property="domainIncludes" href="http://schema.org/Organization">
+			</td>
+			<td class="prop-desc" property="rdfs:comment">The larger organization that this organization is a <a class="localLink" href="/subOrganization">subOrganization</a> of, if any. Supersedes <a href="#">branchOf</a>.<br> Inverse property: <a href="#">subOrganization</a>.</td>
+		</tr>
+		<tr>
+			<th>
+				<code property="rdfs:label"><a href="#">publishingPrinciples</a></code>
+			</th>
+			<td class="prop-ect">
+				<link property="rangeIncludes" href="http://schema.org/CreativeWork">
+				<a href="#">CreativeWork</a>&nbsp; or <br> 
+				<link property="rangeIncludes" href="http://schema.org/URL">
+				<a href="#">URL</a>&nbsp;
+				<link property="domainIncludes" href="http://schema.org/CreativeWork">
+				<link property="domainIncludes" href="http://schema.org/Organization">
+				<link property="domainIncludes" href="http://schema.org/Person">
+			</td>
+			<td class="prop-desc" property="rdfs:comment">The publishingPrinciples property indicates (typically via <a class="localLink" href="/URL">URL</a>) a document describing the editorial principles of an <a class="localLink" href="/Organization">Organization</a> (or individual e.g. a <a class="localLink" href="/Person">Person</a> writing a blog) that relate to their activities as a publisher, e.g. ethics or diversity policies. When applied to a <a class="localLink" href="/CreativeWork">CreativeWork</a> (e.g. <a class="localLink" href="/NewsArticle">NewsArticle</a>) the principles are those of the party primarily responsible for the creation of the <a class="localLink" href="/CreativeWork">CreativeWork</a>.<br><br>
+				While such policies are most typically expressed in natural language, sometimes related information (e.g. indicating a <a class="localLink" href="/funder">funder</a>) can be expressed using schema.org terminology.
+			</td>
+		</tr>
+		<tr>
+			<th>
+				<code property="rdfs:label"><a href="#">review</a></code>
+			</th>
+			<td class="prop-ect">
+				<link property="rangeIncludes" href="http://schema.org/Review">
+				<a href="#">Review</a>&nbsp;
+				<link property="domainIncludes" href="http://schema.org/Brand">
+				<link property="domainIncludes" href="http://schema.org/CreativeWork">
+				<link property="domainIncludes" href="http://schema.org/Event">
+				<link property="domainIncludes" href="http://schema.org/Offer">
+				<link property="domainIncludes" href="http://schema.org/Organization">
+				<link property="domainIncludes" href="http://schema.org/Place">
+				<link property="domainIncludes" href="http://schema.org/Product">
+				<link property="domainIncludes" href="http://schema.org/Service">
+			</td>
+			<td class="prop-desc" property="rdfs:comment">A review of the item. Supersedes <a href="#">reviews</a>.</td>
+		</tr>
+		<tr>
+			<th>
+				<code property="rdfs:label"><a href="#">seeks</a></code>
+			</th>
+			<td class="prop-ect">
+				<link property="rangeIncludes" href="http://schema.org/Demand">
+				<a href="#">Demand</a>&nbsp;
+				<link property="domainIncludes" href="http://schema.org/Organization">
+				<link property="domainIncludes" href="http://schema.org/Person">
+			</td>
+			<td class="prop-desc" property="rdfs:comment">A pointer to products or services sought by the organization or person (demand).</td>
+		</tr>
+		<tr>
+			<th>
+				<code property="rdfs:label"><a href="#">slogan</a></code>
+			</th>
+			<td class="prop-ect">
+				<link property="rangeIncludes" href="http://schema.org/Text">
+				<a href="#">Text</a>&nbsp;
+				<link property="domainIncludes" href="http://schema.org/Brand">
+				<link property="domainIncludes" href="http://schema.org/Organization">
+				<link property="domainIncludes" href="http://schema.org/Place">
+				<link property="domainIncludes" href="http://schema.org/Product">
+				<link property="domainIncludes" href="http://schema.org/Service">
+			</td>
+			<td class="prop-desc" property="rdfs:comment">A slogan or motto associated with the item.</td>
+		</tr>
+		<tr>
+			<th>
+				<code property="rdfs:label"><a href="#">sponsor</a></code>
+			</th>
+			<td class="prop-ect">
+				<link property="rangeIncludes" href="http://schema.org/Organization">
+				<a href="#">Organization</a>&nbsp; or <br> 
+				<link property="rangeIncludes" href="http://schema.org/Person">
+				<a href="#">Person</a>&nbsp;
+				<link property="domainIncludes" href="http://schema.org/CreativeWork">
+				<link property="domainIncludes" href="http://schema.org/Event">
+				<link property="domainIncludes" href="http://schema.org/Grant">
+				<link property="domainIncludes" href="http://schema.org/MedicalStudy">
+				<link property="domainIncludes" href="http://schema.org/Organization">
+				<link property="domainIncludes" href="http://schema.org/Person">
+			</td>
+			<td class="prop-desc" property="rdfs:comment">A person or organization that supports a thing through a pledge, promise, or financial contribution. e.g. a sponsor of a Medical Study or a corporate sponsor of an event.</td>
+		</tr>
+		<tr>
+			<th>
+				<code property="rdfs:label"><a href="#">subOrganization</a></code>
+			</th>
+			<td class="prop-ect">
+				<link property="rangeIncludes" href="http://schema.org/Organization">
+				<a href="#">Organization</a>&nbsp;
+				<link property="domainIncludes" href="http://schema.org/Organization">
+			</td>
+			<td class="prop-desc" property="rdfs:comment">A relationship between two organizations where the first includes the second, e.g., as a subsidiary. See also: the more specific 'department' property.<br> Inverse property: <a href="#">parentOrganization</a>.</td>
+		</tr>
+		<tr>
+			<th>
+				<code property="rdfs:label"><a href="#">taxID</a></code>
+			</th>
+			<td class="prop-ect">
+				<link property="rangeIncludes" href="http://schema.org/Text">
+				<a href="#">Text</a>&nbsp;
+				<link property="domainIncludes" href="http://schema.org/Organization">
+				<link property="domainIncludes" href="http://schema.org/Person">
+			</td>
+			<td class="prop-desc" property="rdfs:comment">The Tax / Fiscal ID of the organization or person, e.g. the TIN in the US or the CIF/NIF in Spain.</td>
+		</tr>
+		<tr>
+			<th>
+				<code property="rdfs:label"><a href="#">telephone</a></code>
+			</th>
+			<td class="prop-ect">
+				<link property="rangeIncludes" href="http://schema.org/Text">
+				<a href="#">Text</a>&nbsp;
+				<link property="domainIncludes" href="http://schema.org/ContactPoint">
+				<link property="domainIncludes" href="http://schema.org/Organization">
+				<link property="domainIncludes" href="http://schema.org/Person">
+				<link property="domainIncludes" href="http://schema.org/Place">
+			</td>
+			<td class="prop-desc" property="rdfs:comment">The telephone number.</td>
+		</tr>
+		<tr>
+			<th>
+				<code property="rdfs:label"><a title="Defined in extension: pending.schema.org" class="ext ext-pending" href="https://pending.schema.org/unnamedSourcesPolicy">unnamedSourcesPolicy</a></code>
+			</th>
+			<td class="prop-ect">
+				<link property="rangeIncludes" href="http://schema.org/CreativeWork">
+				<a href="#">CreativeWork</a>&nbsp; or <br> 
+				<link property="rangeIncludes" href="http://schema.org/URL">
+				<a href="#">URL</a>&nbsp;
+				<link property="domainIncludes" href="http://schema.org/NewsMediaOrganization">
+				<link property="domainIncludes" href="http://schema.org/Organization">
+			</td>
+			<td class="prop-desc" property="rdfs:comment">For an <a class="localLink" href="/Organization">Organization</a> (typically a <a class="localLink" href="/NewsMediaOrganization">NewsMediaOrganization</a>), a statement about policy on use of unnamed sources and the decision process required.</td>
+		</tr>
+		<tr>
+			<th>
+				<code property="rdfs:label"><a href="#">vatID</a></code>
+			</th>
+			<td class="prop-ect">
+				<link property="rangeIncludes" href="http://schema.org/Text">
+				<a href="#">Text</a>&nbsp;
+				<link property="domainIncludes" href="http://schema.org/Organization">
+				<link property="domainIncludes" href="http://schema.org/Person">
+			</td>
+			<td class="prop-desc" property="rdfs:comment">The Value-added Tax ID of the organization or person.</td>
+		</tr>
+		<tr>
+			<th>Properties from <a href="#">Place</a></th>
+		</tr>
+	</tbody>
+	<tbody class="supertype">
+		<tr>
+			<th>
+				<code property="rdfs:label"><a href="#">additionalProperty</a></code>
+			</th>
+			<td class="prop-ect">
+				<link property="rangeIncludes" href="http://schema.org/PropertyValue">
+				<a href="#">PropertyValue</a>&nbsp;
+				<link property="domainIncludes" href="http://schema.org/Place">
+				<link property="domainIncludes" href="http://schema.org/Product">
+				<link property="domainIncludes" href="http://schema.org/QualitativeValue">
+				<link property="domainIncludes" href="http://schema.org/QuantitativeValue">
+			</td>
+			<td class="prop-desc" property="rdfs:comment">A property-value pair representing an additional characteristics of the entitity, e.g. a product feature or another characteristic for which there is no matching property in schema.org.<br><br>
+				Note: Publishers should be aware that applications designed to use specific schema.org properties (e.g. http://schema.org/width, http://schema.org/color, http://schema.org/gtin13, ...) will typically expect such data to be provided using those properties, rather than using the generic property/value mechanism.
+			</td>
+		</tr>
+		<tr>
+			<th>
+				<code property="rdfs:label"><a href="#">address</a></code>
+			</th>
+			<td class="prop-ect">
+				<link property="rangeIncludes" href="http://schema.org/PostalAddress">
+				<a href="#">PostalAddress</a>&nbsp; or <br> 
+				<link property="rangeIncludes" href="http://schema.org/Text">
+				<a href="#">Text</a>&nbsp;
+				<link property="domainIncludes" href="http://schema.org/GeoCoordinates">
+				<link property="domainIncludes" href="http://schema.org/GeoShape">
+				<link property="domainIncludes" href="http://schema.org/Organization">
+				<link property="domainIncludes" href="http://schema.org/Person">
+				<link property="domainIncludes" href="http://schema.org/Place">
+			</td>
+			<td class="prop-desc" property="rdfs:comment">Physical address of the item.</td>
+		</tr>
+		<tr>
+			<th>
+				<code property="rdfs:label"><a href="#">aggregateRating</a></code>
+			</th>
+			<td class="prop-ect">
+				<link property="rangeIncludes" href="http://schema.org/AggregateRating">
+				<a href="#">AggregateRating</a>&nbsp;
+				<link property="domainIncludes" href="http://schema.org/Brand">
+				<link property="domainIncludes" href="http://schema.org/CreativeWork">
+				<link property="domainIncludes" href="http://schema.org/Event">
+				<link property="domainIncludes" href="http://schema.org/Offer">
+				<link property="domainIncludes" href="http://schema.org/Organization">
+				<link property="domainIncludes" href="http://schema.org/Place">
+				<link property="domainIncludes" href="http://schema.org/Product">
+				<link property="domainIncludes" href="http://schema.org/Service">
+			</td>
+			<td class="prop-desc" property="rdfs:comment">The overall rating, based on a collection of reviews or ratings, of the item.</td>
+		</tr>
+		<tr>
+			<th>
+				<code property="rdfs:label"><a href="#">amenityFeature</a></code>
+			</th>
+			<td class="prop-ect">
+				<link property="rangeIncludes" href="http://schema.org/LocationFeatureSpecification">
+				<a href="#">LocationFeatureSpecification</a>&nbsp;
+				<link property="domainIncludes" href="http://schema.org/Accommodation">
+				<link property="domainIncludes" href="http://schema.org/LodgingBusiness">
+				<link property="domainIncludes" href="http://schema.org/Place">
+			</td>
+			<td class="prop-desc" property="rdfs:comment">An amenity feature (e.g. a characteristic or service) of the Accommodation. This generic property does not make a statement about whether the feature is included in an offer for the main accommodation or available at extra costs.</td>
+		</tr>
+		<tr>
+			<th>
+				<code property="rdfs:label"><a href="#">branchCode</a></code>
+			</th>
+			<td class="prop-ect">
+				<link property="rangeIncludes" href="http://schema.org/Text">
+				<a href="#">Text</a>&nbsp;
+				<link property="domainIncludes" href="http://schema.org/Place">
+			</td>
+			<td class="prop-desc" property="rdfs:comment">A short textual code (also called "store code") that uniquely identifies a place of business. The code is typically assigned by the parentOrganization and used in structured URLs.<br><br>
+				For example, in the URL http://www.starbucks.co.uk/store-locator/etc/detail/3047 the code "3047" is a branchCode for a particular branch.
+			</td>
+		</tr>
+		<tr>
+			<th>
+				<code property="rdfs:label"><a href="#">containedInPlace</a></code>
+			</th>
+			<td class="prop-ect">
+				<link property="rangeIncludes" href="http://schema.org/Place">
+				<a href="#">Place</a>&nbsp;
+				<link property="domainIncludes" href="http://schema.org/Place">
+			</td>
+			<td class="prop-desc" property="rdfs:comment">The basic containment relation between a place and one that contains it. Supersedes <a href="#">containedIn</a>.<br> Inverse property: <a href="#">containsPlace</a>.</td>
+		</tr>
+		<tr>
+			<th>
+				<code property="rdfs:label"><a href="#">containsPlace</a></code>
+			</th>
+			<td class="prop-ect">
+				<link property="rangeIncludes" href="http://schema.org/Place">
+				<a href="#">Place</a>&nbsp;
+				<link property="domainIncludes" href="http://schema.org/Place">
+			</td>
+			<td class="prop-desc" property="rdfs:comment">The basic containment relation between a place and another that it contains.<br> Inverse property: <a href="#">containedInPlace</a>.</td>
+		</tr>
+		<tr>
+			<th>
+				<code property="rdfs:label"><a href="#">event</a></code>
+			</th>
+			<td class="prop-ect">
+				<link property="rangeIncludes" href="http://schema.org/Event">
+				<a href="#">Event</a>&nbsp;
+				<link property="domainIncludes" href="http://schema.org/InformAction">
+				<link property="domainIncludes" href="http://schema.org/InviteAction">
+				<link property="domainIncludes" href="http://schema.org/JoinAction">
+				<link property="domainIncludes" href="http://schema.org/LeaveAction">
+				<link property="domainIncludes" href="http://schema.org/Organization">
+				<link property="domainIncludes" href="http://schema.org/Place">
+				<link property="domainIncludes" href="http://schema.org/PlayAction">
+			</td>
+			<td class="prop-desc" property="rdfs:comment">Upcoming or past event associated with this place, organization, or action. Supersedes <a href="#">events</a>.</td>
+		</tr>
+		<tr>
+			<th>
+				<code property="rdfs:label"><a href="#">faxNumber</a></code>
+			</th>
+			<td class="prop-ect">
+				<link property="rangeIncludes" href="http://schema.org/Text">
+				<a href="#">Text</a>&nbsp;
+				<link property="domainIncludes" href="http://schema.org/ContactPoint">
+				<link property="domainIncludes" href="http://schema.org/Organization">
+				<link property="domainIncludes" href="http://schema.org/Person">
+				<link property="domainIncludes" href="http://schema.org/Place">
+			</td>
+			<td class="prop-desc" property="rdfs:comment">The fax number.</td>
+		</tr>
+		<tr>
+			<th>
+				<code property="rdfs:label"><a href="#">geo</a></code>
+			</th>
+			<td class="prop-ect">
+				<link property="rangeIncludes" href="http://schema.org/GeoCoordinates">
+				<a href="#">GeoCoordinates</a>&nbsp; or <br> 
+				<link property="rangeIncludes" href="http://schema.org/GeoShape">
+				<a href="#">GeoShape</a>&nbsp;
+				<link property="domainIncludes" href="http://schema.org/Place">
+			</td>
+			<td class="prop-desc" property="rdfs:comment">The geo coordinates of the place.</td>
+		</tr>
+		<tr>
+			<th>
+				<code property="rdfs:label"><a href="#">geoContains</a></code>
+			</th>
+			<td class="prop-ect">
+				<link property="rangeIncludes" href="http://schema.org/GeospatialGeometry">
+				<a title="Defined in extension: pending.schema.org" class="ext ext-pending" href="https://pending.schema.org/GeospatialGeometry">GeospatialGeometry</a>&nbsp; or <br> 
+				<link property="rangeIncludes" href="http://schema.org/Place">
+				<a href="#">Place</a>&nbsp;
+				<link property="domainIncludes" href="http://schema.org/GeospatialGeometry">
+				<link property="domainIncludes" href="http://schema.org/Place">
+			</td>
+			<td class="prop-desc" property="rdfs:comment">Represents a relationship between two geometries (or the places they represent), relating a containing geometry to a contained geometry. "a contains b iff no points of b lie in the exterior of a, and at least one point of the interior of b lies in the interior of a". As defined in <a href="#">DE-9IM</a>.</td>
+		</tr>
+		<tr>
+			<th>
+				<code property="rdfs:label"><a href="#">geoCoveredBy</a></code>
+			</th>
+			<td class="prop-ect">
+				<link property="rangeIncludes" href="http://schema.org/GeospatialGeometry">
+				<a title="Defined in extension: pending.schema.org" class="ext ext-pending" href="https://pending.schema.org/GeospatialGeometry">GeospatialGeometry</a>&nbsp; or <br> 
+				<link property="rangeIncludes" href="http://schema.org/Place">
+				<a href="#">Place</a>&nbsp;
+				<link property="domainIncludes" href="http://schema.org/GeospatialGeometry">
+				<link property="domainIncludes" href="http://schema.org/Place">
+			</td>
+			<td class="prop-desc" property="rdfs:comment">Represents a relationship between two geometries (or the places they represent), relating a geometry to another that covers it. As defined in <a href="#">DE-9IM</a>.</td>
+		</tr>
+		<tr>
+			<th>
+				<code property="rdfs:label"><a href="#">geoCovers</a></code>
+			</th>
+			<td class="prop-ect">
+				<link property="rangeIncludes" href="http://schema.org/GeospatialGeometry">
+				<a title="Defined in extension: pending.schema.org" class="ext ext-pending" href="https://pending.schema.org/GeospatialGeometry">GeospatialGeometry</a>&nbsp; or <br> 
+				<link property="rangeIncludes" href="http://schema.org/Place">
+				<a href="#">Place</a>&nbsp;
+				<link property="domainIncludes" href="http://schema.org/GeospatialGeometry">
+				<link property="domainIncludes" href="http://schema.org/Place">
+			</td>
+			<td class="prop-desc" property="rdfs:comment">Represents a relationship between two geometries (or the places they represent), relating a covering geometry to a covered geometry. "Every point of b is a point of (the interior or boundary of) a". As defined in <a href="#">DE-9IM</a>.</td>
+		</tr>
+		<tr>
+			<th>
+				<code property="rdfs:label"><a href="#">geoCrosses</a></code>
+			</th>
+			<td class="prop-ect">
+				<link property="rangeIncludes" href="http://schema.org/GeospatialGeometry">
+				<a title="Defined in extension: pending.schema.org" class="ext ext-pending" href="https://pending.schema.org/GeospatialGeometry">GeospatialGeometry</a>&nbsp; or <br> 
+				<link property="rangeIncludes" href="http://schema.org/Place">
+				<a href="#">Place</a>&nbsp;
+				<link property="domainIncludes" href="http://schema.org/GeospatialGeometry">
+				<link property="domainIncludes" href="http://schema.org/Place">
+			</td>
+			<td class="prop-desc" property="rdfs:comment">Represents a relationship between two geometries (or the places they represent), relating a geometry to another that crosses it: "a crosses b: they have some but not all interior points in common, and the dimension of the intersection is less than that of at least one of them". As defined in <a href="#">DE-9IM</a>.</td>
+		</tr>
+		<tr>
+			<th>
+				<code property="rdfs:label"><a href="#">geoDisjoint</a></code>
+			</th>
+			<td class="prop-ect">
+				<link property="rangeIncludes" href="http://schema.org/GeospatialGeometry">
+				<a title="Defined in extension: pending.schema.org" class="ext ext-pending" href="https://pending.schema.org/GeospatialGeometry">GeospatialGeometry</a>&nbsp; or <br> 
+				<link property="rangeIncludes" href="http://schema.org/Place">
+				<a href="#">Place</a>&nbsp;
+				<link property="domainIncludes" href="http://schema.org/GeospatialGeometry">
+				<link property="domainIncludes" href="http://schema.org/Place">
+			</td>
+			<td class="prop-desc" property="rdfs:comment">Represents spatial relations in which two geometries (or the places they represent) are topologically disjoint: they have no point in common. They form a set of disconnected geometries." (a symmetric relationship, as defined in <a href="#">DE-9IM</a>)</td>
+		</tr>
+		<tr>
+			<th>
+				<code property="rdfs:label"><a href="#">geoEquals</a></code>
+			</th>
+			<td class="prop-ect">
+				<link property="rangeIncludes" href="http://schema.org/GeospatialGeometry">
+				<a title="Defined in extension: pending.schema.org" class="ext ext-pending" href="https://pending.schema.org/GeospatialGeometry">GeospatialGeometry</a>&nbsp; or <br> 
+				<link property="rangeIncludes" href="http://schema.org/Place">
+				<a href="#">Place</a>&nbsp;
+				<link property="domainIncludes" href="http://schema.org/GeospatialGeometry">
+				<link property="domainIncludes" href="http://schema.org/Place">
+			</td>
+			<td class="prop-desc" property="rdfs:comment">Represents spatial relations in which two geometries (or the places they represent) are topologically equal, as defined in <a href="#">DE-9IM</a>. "Two geometries are topologically equal if their interiors intersect and no part of the interior or boundary of one geometry intersects the exterior of the other" (a symmetric relationship)</td>
+		</tr>
+		<tr>
+			<th>
+				<code property="rdfs:label"><a href="#">geoIntersects</a></code>
+			</th>
+			<td class="prop-ect">
+				<link property="rangeIncludes" href="http://schema.org/GeospatialGeometry">
+				<a title="Defined in extension: pending.schema.org" class="ext ext-pending" href="https://pending.schema.org/GeospatialGeometry">GeospatialGeometry</a>&nbsp; or <br> 
+				<link property="rangeIncludes" href="http://schema.org/Place">
+				<a href="#">Place</a>&nbsp;
+				<link property="domainIncludes" href="http://schema.org/GeospatialGeometry">
+				<link property="domainIncludes" href="http://schema.org/Place">
+			</td>
+			<td class="prop-desc" property="rdfs:comment">Represents spatial relations in which two geometries (or the places they represent) have at least one point in common. As defined in <a href="#">DE-9IM</a>.</td>
+		</tr>
+		<tr>
+			<th>
+				<code property="rdfs:label"><a href="#">geoOverlaps</a></code>
+			</th>
+			<td class="prop-ect">
+				<link property="rangeIncludes" href="http://schema.org/GeospatialGeometry">
+				<a title="Defined in extension: pending.schema.org" class="ext ext-pending" href="https://pending.schema.org/GeospatialGeometry">GeospatialGeometry</a>&nbsp; or <br> 
+				<link property="rangeIncludes" href="http://schema.org/Place">
+				<a href="#">Place</a>&nbsp;
+				<link property="domainIncludes" href="http://schema.org/GeospatialGeometry">
+				<link property="domainIncludes" href="http://schema.org/Place">
+			</td>
+			<td class="prop-desc" property="rdfs:comment">Represents a relationship between two geometries (or the places they represent), relating a geometry to another that geospatially overlaps it, i.e. they have some but not all points in common. As defined in <a href="#">DE-9IM</a>.</td>
+		</tr>
+		<tr>
+			<th>
+				<code property="rdfs:label"><a href="#">geoTouches</a></code>
+			</th>
+			<td class="prop-ect">
+				<link property="rangeIncludes" href="http://schema.org/GeospatialGeometry">
+				<a title="Defined in extension: pending.schema.org" class="ext ext-pending" href="https://pending.schema.org/GeospatialGeometry">GeospatialGeometry</a>&nbsp; or <br> 
+				<link property="rangeIncludes" href="http://schema.org/Place">
+				<a href="#">Place</a>&nbsp;
+				<link property="domainIncludes" href="http://schema.org/GeospatialGeometry">
+				<link property="domainIncludes" href="http://schema.org/Place">
+			</td>
+			<td class="prop-desc" property="rdfs:comment">Represents spatial relations in which two geometries (or the places they represent) touch: they have at least one boundary point in common, but no interior points." (a symmetric relationship, as defined in <a href="#">DE-9IM</a> )</td>
+		</tr>
+		<tr>
+			<th>
+				<code property="rdfs:label"><a href="#">geoWithin</a></code>
+			</th>
+			<td class="prop-ect">
+				<link property="rangeIncludes" href="http://schema.org/GeospatialGeometry">
+				<a title="Defined in extension: pending.schema.org" class="ext ext-pending" href="https://pending.schema.org/GeospatialGeometry">GeospatialGeometry</a>&nbsp; or <br> 
+				<link property="rangeIncludes" href="http://schema.org/Place">
+				<a href="#">Place</a>&nbsp;
+				<link property="domainIncludes" href="http://schema.org/GeospatialGeometry">
+				<link property="domainIncludes" href="http://schema.org/Place">
+			</td>
+			<td class="prop-desc" property="rdfs:comment">Represents a relationship between two geometries (or the places they represent), relating a geometry to one that contains it, i.e. it is inside (i.e. within) its interior. As defined in <a href="#">DE-9IM</a>.</td>
+		</tr>
+		<tr>
+			<th>
+				<code property="rdfs:label"><a href="#">globalLocationNumber</a></code>
+			</th>
+			<td class="prop-ect">
+				<link property="rangeIncludes" href="http://schema.org/Text">
+				<a href="#">Text</a>&nbsp;
+				<link property="domainIncludes" href="http://schema.org/Organization">
+				<link property="domainIncludes" href="http://schema.org/Person">
+				<link property="domainIncludes" href="http://schema.org/Place">
+			</td>
+			<td class="prop-desc" property="rdfs:comment">The <a href="#">Global Location Number</a> (GLN, sometimes also referred to as International Location Number or ILN) of the respective organization, person, or place. The GLN is a 13-digit number used to identify parties and physical locations.</td>
+		</tr>
+		<tr>
+			<th>
+				<code property="rdfs:label"><a href="#">hasMap</a></code>
+			</th>
+			<td class="prop-ect">
+				<link property="rangeIncludes" href="http://schema.org/Map">
+				<a href="#">Map</a>&nbsp; or <br> 
+				<link property="rangeIncludes" href="http://schema.org/URL">
+				<a href="#">URL</a>&nbsp;
+				<link property="domainIncludes" href="http://schema.org/Place">
+			</td>
+			<td class="prop-desc" property="rdfs:comment">A URL to a map of the place. Supersedes <a href="#">map</a>, <a href="#">maps</a>.</td>
+		</tr>
+		<tr>
+			<th>
+				<code property="rdfs:label"><a href="#">isAccessibleForFree</a></code>
+			</th>
+			<td class="prop-ect">
+				<link property="rangeIncludes" href="http://schema.org/Boolean">
+				<a href="#">Boolean</a>&nbsp;
+				<link property="domainIncludes" href="http://schema.org/CreativeWork">
+				<link property="domainIncludes" href="http://schema.org/Event">
+				<link property="domainIncludes" href="http://schema.org/Place">
+				<link property="domainIncludes" href="http://schema.org/PublicationEvent">
+			</td>
+			<td class="prop-desc" property="rdfs:comment">A flag to signal that the item, event, or place is accessible for free. Supersedes <a href="#">free</a>.</td>
+		</tr>
+		<tr>
+			<th>
+				<code property="rdfs:label"><a href="#">isicV4</a></code>
+			</th>
+			<td class="prop-ect">
+				<link property="rangeIncludes" href="http://schema.org/Text">
+				<a href="#">Text</a>&nbsp;
+				<link property="domainIncludes" href="http://schema.org/Organization">
+				<link property="domainIncludes" href="http://schema.org/Person">
+				<link property="domainIncludes" href="http://schema.org/Place">
+			</td>
+			<td class="prop-desc" property="rdfs:comment">The International Standard of Industrial Classification of All Economic Activities (ISIC), Revision 4 code for a particular organization, business person, or place.</td>
+		</tr>
+		<tr>
+			<th>
+				<code property="rdfs:label"><a href="#">logo</a></code>
+			</th>
+			<td class="prop-ect">
+				<link property="rangeIncludes" href="http://schema.org/ImageObject">
+				<a href="#">ImageObject</a>&nbsp; or <br> 
+				<link property="rangeIncludes" href="http://schema.org/URL">
+				<a href="#">URL</a>&nbsp;
+				<link property="domainIncludes" href="http://schema.org/Brand">
+				<link property="domainIncludes" href="http://schema.org/Organization">
+				<link property="domainIncludes" href="http://schema.org/Place">
+				<link property="domainIncludes" href="http://schema.org/Product">
+				<link property="domainIncludes" href="http://schema.org/Service">
+			</td>
+			<td class="prop-desc" property="rdfs:comment">An associated logo.</td>
+		</tr>
+		<tr>
+			<th>
+				<code property="rdfs:label"><a href="#">maximumAttendeeCapacity</a></code>
+			</th>
+			<td class="prop-ect">
+				<link property="rangeIncludes" href="http://schema.org/Integer">
+				<a href="#">Integer</a>&nbsp;
+				<link property="domainIncludes" href="http://schema.org/Event">
+				<link property="domainIncludes" href="http://schema.org/Place">
+			</td>
+			<td class="prop-desc" property="rdfs:comment">The total number of individuals that may attend an event or venue.</td>
+		</tr>
+		<tr>
+			<th>
+				<code property="rdfs:label"><a href="#">openingHoursSpecification</a></code>
+			</th>
+			<td class="prop-ect">
+				<link property="rangeIncludes" href="http://schema.org/OpeningHoursSpecification">
+				<a href="#">OpeningHoursSpecification</a>&nbsp;
+				<link property="domainIncludes" href="http://schema.org/Place">
+			</td>
+			<td class="prop-desc" property="rdfs:comment">The opening hours of a certain place.</td>
+		</tr>
+		<tr>
+			<th>
+				<code property="rdfs:label"><a href="#">photo</a></code>
+			</th>
+			<td class="prop-ect">
+				<link property="rangeIncludes" href="http://schema.org/ImageObject">
+				<a href="#">ImageObject</a>&nbsp; or <br> 
+				<link property="rangeIncludes" href="http://schema.org/Photograph">
+				<a href="#">Photograph</a>&nbsp;
+				<link property="domainIncludes" href="http://schema.org/Place">
+			</td>
+			<td class="prop-desc" property="rdfs:comment">A photograph of this place. Supersedes <a href="#">photos</a>.</td>
+		</tr>
+		<tr>
+			<th>
+				<code property="rdfs:label"><a href="#">publicAccess</a></code>
+			</th>
+			<td class="prop-ect">
+				<link property="rangeIncludes" href="http://schema.org/Boolean">
+				<a href="#">Boolean</a>&nbsp;
+				<link property="domainIncludes" href="http://schema.org/Place">
+			</td>
+			<td class="prop-desc" property="rdfs:comment">A flag to signal that the <a class="localLink" href="/Place">Place</a> is open to public visitors.  If this property is omitted there is no assumed default boolean value</td>
+		</tr>
+		<tr>
+			<th>
+				<code property="rdfs:label"><a href="#">review</a></code>
+			</th>
+			<td class="prop-ect">
+				<link property="rangeIncludes" href="http://schema.org/Review">
+				<a href="#">Review</a>&nbsp;
+				<link property="domainIncludes" href="http://schema.org/Brand">
+				<link property="domainIncludes" href="http://schema.org/CreativeWork">
+				<link property="domainIncludes" href="http://schema.org/Event">
+				<link property="domainIncludes" href="http://schema.org/Offer">
+				<link property="domainIncludes" href="http://schema.org/Organization">
+				<link property="domainIncludes" href="http://schema.org/Place">
+				<link property="domainIncludes" href="http://schema.org/Product">
+				<link property="domainIncludes" href="http://schema.org/Service">
+			</td>
+			<td class="prop-desc" property="rdfs:comment">A review of the item. Supersedes <a href="#">reviews</a>.</td>
+		</tr>
+		<tr>
+			<th>
+				<code property="rdfs:label"><a href="#">slogan</a></code>
+			</th>
+			<td class="prop-ect">
+				<link property="rangeIncludes" href="http://schema.org/Text">
+				<a href="#">Text</a>&nbsp;
+				<link property="domainIncludes" href="http://schema.org/Brand">
+				<link property="domainIncludes" href="http://schema.org/Organization">
+				<link property="domainIncludes" href="http://schema.org/Place">
+				<link property="domainIncludes" href="http://schema.org/Product">
+				<link property="domainIncludes" href="http://schema.org/Service">
+			</td>
+			<td class="prop-desc" property="rdfs:comment">A slogan or motto associated with the item.</td>
+		</tr>
+		<tr>
+			<th>
+				<code property="rdfs:label"><a href="#">smokingAllowed</a></code>
+			</th>
+			<td class="prop-ect">
+				<link property="rangeIncludes" href="http://schema.org/Boolean">
+				<a href="#">Boolean</a>&nbsp;
+				<link property="domainIncludes" href="http://schema.org/Place">
+			</td>
+			<td class="prop-desc" property="rdfs:comment">Indicates whether it is allowed to smoke in the place, e.g. in the restaurant, hotel or hotel room.</td>
+		</tr>
+		<tr>
+			<th>
+				<code property="rdfs:label"><a href="#">specialOpeningHoursSpecification</a></code>
+			</th>
+			<td class="prop-ect">
+				<link property="rangeIncludes" href="http://schema.org/OpeningHoursSpecification">
+				<a href="#">OpeningHoursSpecification</a>&nbsp;
+				<link property="domainIncludes" href="http://schema.org/Place">
+			</td>
+			<td class="prop-desc" property="rdfs:comment">The special opening hours of a certain place.<br><br>
+				Use this to explicitly override general opening hours brought in scope by <a class="localLink" href="/openingHoursSpecification">openingHoursSpecification</a> or <a class="localLink" href="/openingHours">openingHours</a>.
+			</td>
+		</tr>
+		<tr>
+			<th>
+				<code property="rdfs:label"><a href="#">telephone</a></code>
+			</th>
+			<td class="prop-ect">
+				<link property="rangeIncludes" href="http://schema.org/Text">
+				<a href="#">Text</a>&nbsp;
+				<link property="domainIncludes" href="http://schema.org/ContactPoint">
+				<link property="domainIncludes" href="http://schema.org/Organization">
+				<link property="domainIncludes" href="http://schema.org/Person">
+				<link property="domainIncludes" href="http://schema.org/Place">
+			</td>
+			<td class="prop-desc" property="rdfs:comment">The telephone number.</td>
+		</tr>
+		<tr>
+			<th>Properties from <a href="#">Thing</a></th>
+		</tr>
+	</tbody>
+	<tbody class="supertype">
+		<tr>
+			<th>
+				<code property="rdfs:label"><a href="#">additionalType</a></code>
+			</th>
+			<td class="prop-ect">
+				<link property="rangeIncludes" href="http://schema.org/URL">
+				<a href="#">URL</a>&nbsp;
+				<link property="domainIncludes" href="http://schema.org/Thing">
+			</td>
+			<td class="prop-desc" property="rdfs:comment">An additional type for the item, typically used for adding more specific types from external vocabularies in microdata syntax. This is a relationship between something and a class that the thing is in. In RDFa syntax, it is better to use the native RDFa syntax - the 'typeof' attribute - for multiple types. Schema.org tools may have only weaker understanding of extra types, in particular those defined externally.</td>
+		</tr>
+		<tr>
+			<th>
+				<code property="rdfs:label"><a href="#">alternateName</a></code>
+			</th>
+			<td class="prop-ect">
+				<link property="rangeIncludes" href="http://schema.org/Text">
+				<a href="#">Text</a>&nbsp;
+				<link property="domainIncludes" href="http://schema.org/Thing">
+			</td>
+			<td class="prop-desc" property="rdfs:comment">An alias for the item.</td>
+		</tr>
+		<tr>
+			<th>
+				<code property="rdfs:label"><a href="#">description</a></code>
+			</th>
+			<td class="prop-ect">
+				<link property="rangeIncludes" href="http://schema.org/Text">
+				<a href="#">Text</a>&nbsp;
+				<link property="domainIncludes" href="http://schema.org/Thing">
+			</td>
+			<td class="prop-desc" property="rdfs:comment">A description of the item.</td>
+		</tr>
+		<tr>
+			<th>
+				<code property="rdfs:label"><a href="#">disambiguatingDescription</a></code>
+			</th>
+			<td class="prop-ect">
+				<link property="rangeIncludes" href="http://schema.org/Text">
+				<a href="#">Text</a>&nbsp;
+				<link property="domainIncludes" href="http://schema.org/Thing">
+			</td>
+			<td class="prop-desc" property="rdfs:comment">A sub property of description. A short description of the item used to disambiguate from other, similar items. Information from other properties (in particular, name) may be necessary for the description to be useful for disambiguation.</td>
+		</tr>
+		<tr>
+			<th>
+				<code property="rdfs:label"><a href="#">identifier</a></code>
+			</th>
+			<td class="prop-ect">
+				<link property="rangeIncludes" href="http://schema.org/PropertyValue">
+				<a href="#">PropertyValue</a>&nbsp; or <br> 
+				<link property="rangeIncludes" href="http://schema.org/Text">
+				<a href="#">Text</a>&nbsp; or <br> 
+				<link property="rangeIncludes" href="http://schema.org/URL">
+				<a href="#">URL</a>&nbsp;
+				<link property="domainIncludes" href="http://schema.org/Thing">
+			</td>
+			<td class="prop-desc" property="rdfs:comment">The identifier property represents any kind of identifier for any kind of <a class="localLink" href="/Thing">Thing</a>, such as ISBNs, GTIN codes, UUIDs etc. Schema.org provides dedicated properties for representing many of these, either as textual strings or as URL (URI) links. See <a href="#">background notes</a> for more details.</td>
+		</tr>
+		<tr>
+			<th>
+				<code property="rdfs:label"><a href="#">image</a></code>
+			</th>
+			<td class="prop-ect">
+				<link property="rangeIncludes" href="http://schema.org/ImageObject">
+				<a href="#">ImageObject</a>&nbsp; or <br> 
+				<link property="rangeIncludes" href="http://schema.org/URL">
+				<a href="#">URL</a>&nbsp;
+				<link property="domainIncludes" href="http://schema.org/Thing">
+			</td>
+			<td class="prop-desc" property="rdfs:comment">An image of the item. This can be a <a class="localLink" href="/URL">URL</a> or a fully described <a class="localLink" href="/ImageObject">ImageObject</a>.</td>
+		</tr>
+		<tr>
+			<th>
+				<code property="rdfs:label"><a href="#">mainEntityOfPage</a></code>
+			</th>
+			<td class="prop-ect">
+				<link property="rangeIncludes" href="http://schema.org/CreativeWork">
+				<a href="#">CreativeWork</a>&nbsp; or <br> 
+				<link property="rangeIncludes" href="http://schema.org/URL">
+				<a href="#">URL</a>&nbsp;
+				<link property="domainIncludes" href="http://schema.org/Thing">
+			</td>
+			<td class="prop-desc" property="rdfs:comment">Indicates a page (or other CreativeWork) for which this thing is the main entity being described. See <a href="#">background notes</a> for details.<br> Inverse property: <a href="#">mainEntity</a>.</td>
+		</tr>
+		<tr>
+			<th>
+				<code property="rdfs:label"><a href="#">name</a></code>
+			</th>
+			<td class="prop-ect">
+				<link property="rangeIncludes" href="http://schema.org/Text">
+				<a href="#">Text</a>&nbsp;
+				<link property="domainIncludes" href="http://schema.org/Thing">
+			</td>
+			<td class="prop-desc" property="rdfs:comment">The name of the item.</td>
+		</tr>
+		<tr>
+			<th>
+				<code property="rdfs:label"><a href="#">potentialAction</a></code>
+			</th>
+			<td class="prop-ect">
+				<link property="rangeIncludes" href="http://schema.org/Action">
+				<a href="#">Action</a>&nbsp;
+				<link property="domainIncludes" href="http://schema.org/Thing">
+			</td>
+			<td class="prop-desc" property="rdfs:comment">Indicates a potential Action, which describes an idealized action in which this thing would play an 'object' role.</td>
+		</tr>
+		<tr>
+			<th>
+				<code property="rdfs:label"><a href="#">sameAs</a></code>
+			</th>
+			<td class="prop-ect">
+				<link property="rangeIncludes" href="http://schema.org/URL">
+				<a href="#">URL</a>&nbsp;
+				<link property="domainIncludes" href="http://schema.org/Thing">
+			</td>
+			<td class="prop-desc" property="rdfs:comment">URL of a reference Web page that unambiguously indicates the item's identity. E.g. the URL of the item's Wikipedia page, Wikidata entry, or official website.</td>
+		</tr>
+		<tr>
+			<th>
+				<code property="rdfs:label"><a href="#">subjectOf</a></code>
+			</th>
+			<td class="prop-ect">
+				<link property="rangeIncludes" href="http://schema.org/CreativeWork">
+				<a href="#">CreativeWork</a>&nbsp; or <br> 
+				<link property="rangeIncludes" href="http://schema.org/Event">
+				<a href="#">Event</a>&nbsp;
+				<link property="domainIncludes" href="http://schema.org/Thing">
+			</td>
+			<td class="prop-desc" property="rdfs:comment">A CreativeWork or Event about this Thing.<br> Inverse property: <a href="#">about</a>.</td>
+		</tr>
+		<tr>
+			<th>
+				<code property="rdfs:label"><a href="#">url</a></code>
+			</th>
+			<td class="prop-ect">
+				<link property="rangeIncludes" href="http://schema.org/URL">
+				<a href="#">URL</a>&nbsp;
+				<link property="domainIncludes" href="http://schema.org/Thing">
+			</td>
+			<td class="prop-desc" property="rdfs:comment">URL of the item.</td>
+		</tr>
+	</tbody>
+</table>
+		
+		</div>
+		
+		<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+		<script>
+			$(function(){
+				console.log($('th').length)
+			});
+		</script>
+	</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
