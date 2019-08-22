@@ -272,21 +272,17 @@
 						<p>Drop me a line. Let's work together!</p>
 					</div>
 					<div class="form">
-						<div class="container"><!--class="contactForm"-->
-							<div id="sendmessage">Your message has been sent. Thanks!</div>
-							<div id="errormessage"></div>
+						<div class="container">
 							<form action="message-recieved.html" method="post" role="form"  data-netlify="true" name="contact">
 								<p style="display: none;">
 									<label>Don’t fill this out if you're human: <input name="bot-field" /></label>
 								</p>
 								<div class="form-row">
 									<div class="form-group col-md-6">
-										<input type="text" name="name" class="form-control" id="name" placeholder="Your Name*" data-rule="minlen:4" data-msg="Please enter at least 4 characters" />
-										<div class="validation"></div>
+										<input type="text" name="name" class="form-control" id="name" placeholder="Your Name*" required/>
 									</div>
 									<div class="form-group col-md-6">
-										<input type="email" class="form-control" name="email" id="email" placeholder="Your Email*" data-rule="email" data-msg="Please enter a valid email" />
-										<div class="validation"></div>
+										<input type="email" class="form-control" name="email" id="email" placeholder="Your Email*" required/>
 									</div>
 								</div>
 								<div class="form-group">
@@ -331,7 +327,7 @@
 		<script src="lib/isotope/isotope.pkgd.min.js"></script>
 		<script src="lib/lightbox/js/lightbox.min.js"></script>
 		<script src="lib/touchSwipe/jquery.touchSwipe.min.js"></script>
-		<script src="contactform/contactform.js"></script>
+		<!--script src="contactform/contactform.js"></script-->
 		<script src="js/main.js"></script>
 	</body>
 </html>
