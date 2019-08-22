@@ -644,7 +644,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 --------------------------------*/
 
 #about {
-  background: url("../img/about-bg.jpg") center top no-repeat fixed;
+  background: url("../img/dust_scratches.png");
   background-size: cover;
   padding: 60px 0 40px 0;
   position: relative;
@@ -786,7 +786,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 --------------------------------*/
 
 #call-to-action {
-  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(231,173,31, 0.2)), url(../img/../img/Ropes3.jpg) fixed center center;
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(231,173,31, 0.2)), url(../img/Ropes3.jpg) fixed center center;
   background-size: cover;
   padding: 60px 0;
 }
