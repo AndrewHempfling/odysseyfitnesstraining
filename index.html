@@ -24,19 +24,48 @@
 			.navbar-transparent {
 				background-color: rgba(0,0,0,0)
 			}
+@media (min-width: 0px) {
+	.responsive-paragraph {
+		text-align: left !important;	
+	}
+}
 			
-			/*#e7ad1f*/
+@media (min-width: 576px) {
+	.responsive-paragraph {
+		text-align: left !important;	
+	}
+}
+
+@media (min-width: 768px) {
+	.responsive-paragraph {
+		text-align: left !important;	
+	}
+}
+
+@media (min-width: 992px) {
+	.responsive-paragraph {
+		text-align: center;	
+	}
+}
+
+@media (min-width: 1200px) {
+	.responsive-paragraph {
+		text-align: center;	
+	}
+}
+			
+			/*#e7ad1f  id="header"*/
 		</style>
 	</head>
 	<body>
 		<header id="header">
-			<nav class="navbar navbar-expand-lg fixed-top">
-				<div class="container-fluid d-flex justify-content-between">
+			<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+				<div class="container-fluid">
 					<a class="navbar-brand" href="#intro"><img src="img/logo600.png" alt="odyssey fitness logo" title="" width="50" height="50"/></a>
 					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 						<span class="navbar-toggler-icon"></span>
 					</button>
-					<div class="collapse navbar-collapse float-right">
+					<div class="collapse navbar-collapse">
 						<ul class="nav-menu">
 							<li class="menu-active"><a href="#intro">Home</a></li>
 							<li><a href="#training">Training</a></li>
@@ -50,23 +79,20 @@
 			</nav>
 
 		</header>
-		<!-- #header -->
-		<!--==========================
-			Intro Section
-			============================-->
 		<section id="intro">
 			<div class="intro-container">
 				<div id="introCarousel" class="carousel  slide carousel-fade" data-ride="carousel">
 					<div class="carousel-inner" role="listbox">
 						<div class="carousel-item active">
-							<div class="carousel-background"><img src="img/Stock-Photo-1.jpg" alt=""></div>
+							<div class="carousel-background"><img src="img/Stock-Photo-1.jpg" alt="squat"></div>
 							<div class="carousel-container">
 								<div class="carousel-content">
 									<h2>Personal Training – Personalized</h2>
-									<p>Whether it’s your goal to transform your body, lose weight, or build sustainable muscle growth, fitness requires determination and perseverance. Odyssey Fitness Training's Personal Training services in San Diego utilize effective practices in training and nutrition.</p>
+									<p class="responsive-paragraph">Whether it’s your goal to transform your body, lose weight, or build sustainable muscle growth, fitness requires determination and perseverance. Odyssey Fitness Training's Personal Training services in San Diego utilize effective practices in training and nutrition.</p>
 									
-									<p>The hardest part is getting started - And I want to give you a running start.</p>
-									<a href="#featured-services" class="btn-get-started scrollto">Get Started</a>
+									<p class="responsive-paragraph">The hardest part is getting started - And I want to help.</p>
+									
+									<a href="#contact" class="btn-get-started scrollto">Get Started</a>
 								</div>
 							</div>
 						</div>
@@ -87,7 +113,7 @@
 						<div class="col-lg-4 box box-bg">
 							<i class="ion-ios-stopwatch-outline"></i>
 							<h4 class="title"><a href="">Health</a></h4>
-							<p class="description">Help with nutrition dieting, and weight loss</p>
+							<p class="description">Help with nutrition, dieting, and weight loss</p>
 						</div>
 						<div class="col-lg-4 box">
 							<i class="ion-ios-heart-outline"></i>
@@ -101,7 +127,7 @@
 				<div class="container">
 					<header class="section-header wow fadeInUp py-4">
 						<h3>Flexible Fitness Training</h3>
-						<p>Cardio and strength training make up the core components of weight loss and improvements to your body’s health. Starting out on your own can be tricky: which exercises best suit your body shape? How can a diet impact your health goals? How do you build a training schedule which shows results? At Odyssey Fitness Training I use my experience to build personalized plans built around your own goals.</p>
+						<p class="responsive-paragraph">Cardio and strength training make up the core components of weight loss and improvements to your body’s health. Starting out on your own can be tricky. <br class="d-block d-lg-none"><br class="d-block d-lg-none">Which exercises best suit your body type? How can a diet impact your health goals? How do you build a training schedule which shows results? <br class="d-block d-lg-none"><br class="d-block d-lg-none">At Odyssey Fitness Training I use my experience to build personalized plans built around your own goals.</p>
 					</header>
 					<div class="row portfolio-container" style="position: relative; height: 3240px;">
 						<div class="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp" style="position: absolute; left: 0px; top: 0px; visibility: visible; animation-name: fadeInUp;">
@@ -132,9 +158,13 @@
 							</div>
 						</div>
 					</div>
-					<header class="section-header wow fadeInUp">
+				</div>
+			</section>
+			<section>
+				<div class="container">
+					<header class="section-header wow fadeInUp pt-4">
 						<h3>All Fitness Levels Are Welcome</h3>
-						<p class="description">Personal fitness trainers in San Diego are not just reserved for those who are already fit. Odyssey gladly helps anyone of any fitness level - health through fitness and an optimized diet is helpful to anyone, from any walk of life. Whether you’re just beginning your journey, need to lose weight for an upcoming special event - lots of people come in to drop a size or two for their wedding, both men and women! - or need that final push to reach your muscle goals, contact me for a professional consultation.</p>
+						<p class="responsive-paragraph">Personal fitness trainers in San Diego are not just reserved for those who are already fit. Odyssey gladly helps anyone of any fitness level - health through fitness and an optimized diet is helpful to anyone, from any walk of life. <br class="d-block d-lg-none"><br class="d-block d-lg-none">Whether you’re just beginning your journey, need to lose weight for an upcoming special event - lots of people come in to drop a size or two for their wedding, both men and women! Need that final push to reach your goals? Contact me for a professional consultation.</p>
 					</header>
 				</div>
 			</section>
@@ -158,14 +188,14 @@
 					<div class="row">
 						<div class="col-sm-12 col-md-6 text-left">
 							<h3>Athletic Training and Weight&nbsp;Loss</h3>
-							<p class="description">Getting back on your feet is important after undergoing surgery or experiencing physical trauma. While Odyssey is not a PT service, we provide on-going post physical therapy scheduled fitness programs to keep you active. Each of these is structured around your personal goals. It’s a patient service designed to progress at your pace - the aim is to be consistently active, no crunching needed! Let us know where you see yourself in a few weeks or months and I’ll help construct realisable fitness goals.</p>
+							<p class="responsive-paragraph">Getting back on your feet is important after undergoing surgery or experiencing physical trauma. <br class="d-block d-lg-none"><br class="d-block d-lg-none">While Odyssey is not a PT service, we provide on-going post physical therapy scheduled fitness programs to keep you active. Each of these is structured around your personal goals. <br class="d-block d-lg-none"><br class="d-block d-lg-none">It’s a patient service designed to progress at your pace - the aim is to be consistently active, no crunching needed! Let us know where you see yourself in a few weeks or months and I’ll help construct realisable fitness goals.</p>
 						</div>
 						<div class="col-sm-12 col-md-6 text-left">
 							<h3>Post Physical Therapy</h3>
-							<p class="description">The benefits of personal training can be as serious or as casual as you like. As long as there are commitments towards making reasonable changes to your lifestyle and diet, you’ll see progress. Odyssey offers services for people who want explosive change, fast, or athletic performance, or for those who want to casually transform their body over a long-term training partnership.</p>
+							<p class="responsive-paragraph">The benefits of personal training can be as serious or as casual as you like. <br class="d-block d-lg-none"><br class="d-block d-lg-none">As long as there are commitments towards making reasonable changes to your lifestyle and diet, you’ll see progress. <br class="d-block d-lg-none"><br class="d-block d-lg-none">Odyssey offers services for people who want explosive change, fast, or athletic performance, or for those who want to casually transform their body over a long-term training partnership.</p>
 						</div>
 					</div>
-					<a class="cta-btn" href="#">Call To Action</a>
+					<a class="cta-btn" href="#contact">Get Started</a>
 				</div>
 			</section>
 			
@@ -200,7 +230,7 @@
 						<h3>Contact</h3>
 						<p>Drop me a line. Let's work together!</p>
 					</div>
-					<div class="form">
+					<div class="form" data-netlify="true">
 						<div class="container">
 							<div id="sendmessage">Your message has been sent. Thanks!</div>
 							<div id="errormessage"></div>
@@ -257,9 +287,7 @@
 		<script src="lib/isotope/isotope.pkgd.min.js"></script>
 		<script src="lib/lightbox/js/lightbox.min.js"></script>
 		<script src="lib/touchSwipe/jquery.touchSwipe.min.js"></script>
-		<!-- Contact Form JavaScript File -->
 		<script src="contactform/contactform.js"></script>
-		<!-- Template Main Javascript File -->
 		<script src="js/main.js"></script>
 	</body>
 </html>
