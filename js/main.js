@@ -173,6 +173,19 @@
     time: 1000
   });
 
+  // Training isotope and filter
+  var trainingIsotope = $('.training-container').isotope({
+    itemSelector: '.training-item',
+    layoutMode: 'fitRows'
+  });
+
+  $('#training-flters li').on( 'click', function() {
+    $("#training-flters li").removeClass('filter-active');
+    $(this).addClass('filter-active');
+
+    trainingIsotope.isotope({ filter: $(this).data('filter') });
+  });
+
   // Porfolio isotope and filter
   var portfolioIsotope = $('.portfolio-container').isotope({
     itemSelector: '.portfolio-item',

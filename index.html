@@ -94,45 +94,34 @@
 		text-align: center;	
 	}
 }
-			
+			.img-training {
+				width:100%; 
+                height:100%; 
+                object-fit:cover;
+			}
 			/*#e7ad1f  id="header"*/
 		</style>
 	</head>
 	<body data-spy="scroll" data-target="#navbar">
+		
+		<button type="button" id="mobile-nav-toggle"><i class="fa fa-bars"></i></button>
 		<header id="header">
-			<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-				<div class="container-fluid">
-					
-					
-				
+			<div class="container-fluid">
+				<div id="logo" class="pull-left">
+					<a href="#intro"><img src="img/logo600.png" alt="odyssey fitness logo" title="" width="50" height="50"/></a>
 				</div>
-				
-			</nav>
-<nav id="navbar" class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark">
-	<a class="navbar-brand" href="#intro"><img src="img/logo600.png" alt="odyssey fitness logo" title="" width="50" height="50"/></a>
-	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-	<span class="navbar-toggler-icon"></span>
-	</button>
-	<div class="collapse navbar-collapse" id="navbarNav">
-		<ul class="navbar-nav">
-			<li class="nav-item">
-				<a class="nav-link" href="#intro">Home <span class="sr-only">(current)</span></a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="#training">Training</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="#about">About</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="#location">Location</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="#contact">Contact</a>
-			</li>
-		</ul>
-	</div>
-</nav>
+				<nav id="nav-menu-container">
+					<ul class="nav-menu sf-js-enabled sf-arrows" style="touch-action: pan-y;">
+						<li class="menu-active"><a href="#intro">Home</a></li>
+						<li><a href="#training">Training</a></li>
+						<li><a href="#about">About</a></li>
+						
+						<li><a href="#location">Location</a></li>
+						<li><a href="#contact">Contact</a></li>
+					</ul>
+				</nav>
+				<!-- #nav-menu-container -->
+			</div>
 		</header>
 		<section id="intro">
 			<div class="intro-container">
@@ -157,59 +146,51 @@
 		</section>
 		<!-- #intro -->
 		<main id="main">
-			<section id="featured-services">
+		
+<section id="training" class="section-bg">
 				<div class="container">
-					<div class="row">
-						<div class="col-lg-4 box">
-							<i class="ion-ios-bookmarks-outline"></i>
-							<h4 class="title"><a href="">Strategy</a></h4>
-							<p class="description">Customized, calibrated training plans based on your personal goals</p>
-						</div>
-						<div class="col-lg-4 box box-bg">
-							<i class="ion-ios-stopwatch-outline"></i>
-							<h4 class="title"><a href="">Health</a></h4>
-							<p class="description">Help with nutrition, dieting, and weight loss</p>
-						</div>
-						<div class="col-lg-4 box">
-							<i class="ion-ios-heart-outline"></i>
-							<h4 class="title"><a href="">Sustainability</a></h4>
-							<p class="description">No crash diets, no unhealthy fads, just steady encouragement to lead to a healthier lifestyle</p>
-						</div>
-					</div>
-				</div>
-			</section>
-			<section id="training" class="section-bg">
-				<div class="container">
-					<header class="section-header wow fadeInUp py-4">
+					<header class="section-header">
 						<h3>Flexible Fitness Training</h3>
 						<p class="responsive-paragraph">Cardio and strength training make up the core components of weight loss and improvements to your body’s health. Starting out on your own can be tricky. <br class="d-block d-lg-none"><br class="d-block d-lg-none">Which exercises best suit your body type? How can a diet impact your health goals? How do you build a training schedule which shows results? <br class="d-block d-lg-none"><br class="d-block d-lg-none">At Odyssey Fitness Training I use my experience to build personalized plans built around your own goals.</p>
 					</header>
-					<div class="row portfolio-container" style="position: relative; height: 3240px;">
-						<div class="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp" style="position: absolute; left: 0px; top: 0px; visibility: visible; animation-name: fadeInUp;">
-							<div class="portfolio-wrap">
+					<div class="row training-container" style="position: relative; height: 1800px;">
+						<div class="col-lg-4 col-md-6 training-item filter-app wow fadeInUp" style="position: absolute; left: 0px; top: 0px; visibility: visible; animation-name: fadeInUp;">
+							<div class="training-wrap">
 								<figure>
-									<img src="img/Stock-Photo-2.jpg" class="img-fluid" alt="">
-									<a href="img/Stock-Photo-2.jpg" data-lightbox="portfolio" data-title="App 1" class="link-preview" title="Preview"><i class="ion ion-eye"></i></a>
+									<img src="img/Stock-Photo-2.jpg" class="img-training" alt="">
+									<a href="img/Stock-Photo-2.jpg" data-lightbox="training" data-title="App 1" class="link-preview" title="Preview"><i class="ion ion-eye"></i></a>
 									<a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
 								</figure>
+								<div class="training-info">
+									<h4><a href="#">Strategy</a></h4>
+									<p>Customized, calibrated training plans based on your personal&nbsp;goals</p>
+								</div>
 							</div>
 						</div>
-						<div class="col-lg-4 col-md-6 portfolio-item filter-web wow fadeInUp" data-wow-delay="0.1s" style="position: absolute; left: 0px; top: 360px; visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">
-							<div class="portfolio-wrap">
+						<div class="col-lg-4 col-md-6 training-item filter-web wow fadeInUp" data-wow-delay="0.1s" style="position: absolute; left: 360px; top: 0px; visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">
+							<div class="training-wrap">
 								<figure>
-									<img src="img/Stock-Photo-3.jpg" class="img-fluid" alt="">
-									<a href="img/Stock-Photo-3.jpg" class="link-preview" data-lightbox="portfolio" data-title="Web 3" title="Preview"><i class="ion ion-eye"></i></a>
+									<img src="img/row.jpg" class="img-training" alt="">
+									<a href="img/row.jpg" class="link-preview" data-lightbox="training" data-title="Web 3" title="Preview"><i class="ion ion-eye"></i></a>
 									<a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
 								</figure>
+								<div class="training-info">
+									<h4><a href="#">Health</a></h4>
+									<p>Help with nutrition, dieting, and weight&nbsp;loss</p>
+								</div>
 							</div>
 						</div>
-						<div class="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp" data-wow-delay="0.2s" style="position: absolute; left: 0px; top: 720px; visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
-							<div class="portfolio-wrap">
+						<div class="col-lg-4 col-md-6 training-item filter-app wow fadeInUp" data-wow-delay="0.2s" style="position: absolute; left: 0px; top: 360px; visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
+							<div class="training-wrap">
 								<figure>
-									<img src="img/Stock-Photo-4.jpg" class="img-fluid" alt="">
-									<a href="img/Stock-Photo-4.jpg" class="link-preview" data-lightbox="portfolio" data-title="App 2" title="Preview"><i class="ion ion-eye"></i></a>
+									<img src="img/Stock-Photo-4.jpg" class="img-training" alt="">
+									<a href="img/Stock-Photo-4.jpg" class="link-preview" data-lightbox="training" data-title="App 2" title="Preview"><i class="ion ion-eye"></i></a>
 									<a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
 								</figure>
+								<div class="training-info">
+									<h4><a href="#">Sustainability</a></h4>
+									<p>No crash diets, no unhealthy fads, just steady encouragement to lead to a healthier&nbsp;lifestyle</p>
+								</div>
 							</div>
 						</div>
 					</div>
