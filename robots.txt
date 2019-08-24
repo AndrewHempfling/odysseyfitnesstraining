@@ -1,2 +1,4 @@
 User-Agent: *
 Disallow: 
+
+SITEMAP: https://odysseyfitnesstraining.com/sitemap.xml
